@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mobile Create Account</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="create-account-background" class="background-image"></div>
+  <div class="wrapper">
+    <div class="create-account-top-container">
+      <div class="progress-bar">
+        <svg class="dot-current" height=25px width=25px viewBox="0 0 50 50"><path d="M25.000,20.000 C27.761,20.000 30.000,22.239 30.000,25.000 C30.000,27.762 27.761,30.000 25.000,30.000 C22.239,30.000 20.000,27.762 20.000,25.000 C20.000,22.239 22.239,20.000 25.000,20.000 Z"fill="rgb(255, 255, 255)"fill-rule=evenodd /><path d="M25.000,50.000 C11.193,50.000 0.000,38.807 0.000,25.000 C0.000,11.193 11.193,0.000 25.000,0.000 C38.807,0.000 50.000,11.193 50.000,25.000 C50.000,38.807 38.807,50.000 25.000,50.000 ZM25.000,2.000 C12.297,2.000 2.000,12.298 2.000,25.000 C2.000,37.702 12.297,48.000 25.000,48.000 C37.702,48.000 48.000,37.702 48.000,25.000 C48.000,12.298 37.702,2.000 25.000,2.000 Z"fill="rgb(255, 255, 255)"fill-rule=evenodd opacity=0.302 /></svg>
+        <svg class="line" height=1px width=65px><path d="M-0.000,2.000 L-0.000,0.000 L146.000,0.000 L146.000,2.000 L-0.000,2.000 Z"fill="rgb(255, 255, 255)"fill-rule=evenodd opacity=0.302 /></svg>
+        <svg class="dot-undone" height=5px width=5px viewBox="0 0 10 10"><path d="M5.000,0.000 C7.761,0.000 10.000,2.239 10.000,5.000 C10.000,7.762 7.761,10.000 5.000,10.000 C2.239,10.000 0.000,7.762 0.000,5.000 C0.000,2.239 2.239,0.000 5.000,0.000 Z"fill="rgb(255, 255, 255)"fill-rule=evenodd /></svg>
+        <svg class="line" height=1px width=65px><path d="M0.000,2.000 L0.000,0.000 L146.000,0.000 L146.000,2.000 L0.000,2.000 Z"fill="rgb(255, 255, 255)"fill-rule=evenodd opacity=0.302 /></svg>
+        <svg class="dot-undone dot-last" height=5px width=5px viewBox="0 0 10 10"><path d="M5.000,0.000 C7.761,0.000 10.000,2.239 10.000,5.000 C10.000,7.762 7.761,10.000 5.000,10.000 C2.239,10.000 -0.000,7.762 -0.000,5.000 C-0.000,2.239 2.239,0.000 5.000,0.000 Z"fill="rgb(255, 255, 255)"fill-rule=evenodd /></svg>
+      </div>
+      <h2><span>Create Account</span></h2>
+    </div>
+    <form class="create-account" action="create-account" method="post">
+      <div class="input-container">
+        <div class="input-icon name-icon"></div>
+        <input type="text" placeholder="Name" name="name">
+      </div>
+      <div class="input-container">
+        <div class="input-icon email-icon"></div>
+        <input type="text" placeholder="Email" name="email">
+      </div>
+      <div class="input-container">
+        <div class="input-icon password-icon"></div>
+        <input type="text" placeholder="Password" name="password">
+      </div>
+      <button class="ghost-btn" type="button" name="button">Continue</button>
+    </form>
+    <a class="gray-bottom-links" href="">Terms & Conditions</a>
+  </div>
+</body>
+</html>

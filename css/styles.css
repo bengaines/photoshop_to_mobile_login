@@ -1,0 +1,297 @@
+/*------------------------------
+  ------------------------------
+  ---- Table of Contents ----
+   Section 1: Base Styles
+   Section 2: Login Page
+   Section 3: Create Account Page
+   ------------------------------
+------------------------------*/
+
+/*------------------------------
+    Section 1: Base Styles
+------------------------------*/
+html, body, .wrapper, .background-image {
+  height: 100%;
+  margin: 0;
+}
+
+h1, h2, h3, p, a {
+  font-family: Arial, Verdana, sans-serif;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+
+.wrapper {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  color: #fff;
+  text-align: center;
+  margin: 10px 0 10px 0;
+	padding: 15px 10px 15px 10px;
+  border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border: 0px;
+	box-shadow: none;
+	outline: none;
+
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none;
+	-o-appearance:none;
+	appearance:none;
+}
+
+.gray-bottom-links {
+  color: #c9c8c7;
+  margin-top: 15px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+
+/*------------------------------
+    Section 2: Login Page
+------------------------------*/
+
+#login-background {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1000;
+  display: block;
+  background: linear-gradient(#f39374, transparent 100%),
+              linear-gradient(transparent, rgba(0,0,0, 0.5) 100%),
+              #f39374 url('../img/background_image.jpg') no-repeat center;
+  background-size: cover;
+
+  -webkit-filter: contrast(1.1) saturate(1.1);
+  -moz-filter: contrast(1.1) saturate(1.1);
+  -o-filter: contrast(1.1) saturate(1.1);
+  -ms-filter: contrast(1.1) saturate(1.1);
+  filter: contrast(1.1) saturate(1.1);
+}
+
+.logo-container {
+  height: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  margin: auto;
+  box-sizing: border-box;
+  width: 125px;
+  height: 125px;
+}
+
+.logo-waves {
+  display: block;
+  margin: auto;
+}
+
+.large-wave {
+  display: block;
+  margin: auto;
+  margin-bottom: -10px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.small-wave {
+  display: block;
+  margin: auto;
+  padding-bottom: 25px;
+  max-width: 60%;
+  max-height: 60%;
+}
+
+.logo-n-container {
+  display: flex;
+  align-items: center;
+}
+
+svg#logo-n {
+  display: block;
+  margin: -10px auto;
+}
+
+.login-form {
+  height: 40%;
+}
+
+form {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  width: auto;
+}
+
+.input-container {
+  position: relative;
+}
+
+input {
+  color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	text-indent: 18px;
+  letter-spacing: 0.05em;
+  margin: 10px 0 10px 0;
+	padding: 15px 60px 15px 35px;
+	background: rgba(255,255,255,0.3);
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border: 0px;
+	box-shadow: none;
+	outline: none;
+
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none;
+	-o-appearance:none;
+	appearance:none;
+}
+
+.input-icon {
+  cursor: pointer;
+  height: 25px;
+  padding: 23px 15px 15px 20px;
+  width: 25px;
+  position: absolute;
+  left: 0;
+}
+
+.username-icon {
+  display: block;
+  background: url('../img/icon-username.png') no-repeat center;
+  background-size: 22.5px 22.5px;
+}
+
+.password-icon {
+  display: block;
+  background: url('../img/icon-password.png') no-repeat center;
+  background-size: 18px 22.5px;
+}
+
+.orange-btn {
+  background: #f96332;
+}
+
+a.float-left { /* float Create Account link left */
+  float: left;
+}
+
+a.float-right { /* float Need Help? link right */
+  float: right;
+}
+
+/*------------------------------
+    Section 3: Create Account Page
+------------------------------*/
+
+#create-account-background {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1000;
+  display: block;
+  background: linear-gradient(#f39374, transparent 100%),
+              linear-gradient(transparent, rgba(0,0,0, 0.7) 100%),
+              #f39374 url('../img/background_image.jpg') no-repeat center;
+  background-size: cover;
+
+  -webkit-filter: blur(7.5px);
+  -moz-filter: blur(7.5px);
+  -o-filter: blur(7.5px);
+  -ms-filter: blur(7.5px);
+  filter: blur(7.5px); /* Blur the background-image */
+
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1); /* Scale the background-image to 110% so edges of background-image are not blurry */
+}
+
+h1, h2, h3, p, a {
+  color: white;
+}
+
+.create-account-top-container {
+  height: 40%;
+  padding-top: 10px;
+  position: relative;
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.progress-bar .line {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.progress-bar .dot-undone {
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+}
+
+h2 {
+  position: relative;
+  top: 30%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.name-icon {
+  display: block;
+  background: url('../img/icon-name.png') no-repeat center;
+  background-size: 22.5px 11.25px;
+}
+
+.email-icon {
+  display: block;
+  background: url('../img/icon-email.png') no-repeat center;
+  background-size: 22.5px 18px;
+}
+
+.ghost-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  margin-top: 2em;
+}
